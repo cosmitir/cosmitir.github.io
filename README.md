@@ -1,45 +1,26 @@
-# GTA V MAP LEAFLET 
-GTA V MAP LEAFLET is a MAP  based on LEAFLET.
+## Grand Theft Auto V Interactive Map
+https://jgardner117.github.io/gtav-interactive-map/
 
-## Features
+The Grand Theft Auto V Interactive Map is a single page web application that displays *most* of the activities, stores, safehouses, and more in Grand Theft Auto V's fictional city of Los Santos. All of the points were georeferenced using the in-game map found in the pause menu, and each point displays a screenshot captured from the game relating to the Point of Interest.
 
-* Easy to use
-* Custom Icons
-* 3 Map Style(Atlas,Satellite,Grid)
+The mapping library used is [Leaflet](https://leafletjs.com/). The points are stored as GeoJSON files with one file corresponding to each layer. Each GeoJSON feature has a property called *imgname* that stores the location of the screenshot that corresponds to that point.
 
-## Dependencies
-Map Styles
-```
-  https://mega.nz/file/UKo0wI4A#hDZV1RE-KU0rF2BePRjaKQfwWVBvWbsBVAFmM7yWvo8
-```
-Leaflet
-```
- https://leafletjs.com/
-```
-## Install
-```
-  Extract map styles in source folder
-```
-## How to use
-Create blip
-The coordinates are inverted X will be Y and Y will be X.
-```
-var X  = 0;
-var Y = 0;
-L.marker([Y,X], {icon: customIcon(1)}).addTo(Icons["Example"]).bindPopup("I am here.");
-```
-How use CustomIcon
-The parameter in the customIcon function is the name of the .png picture in the blips folder
-```
-For /blips/1.png we will use customIcon(1)}
-```
-## Screenshots
-| Atlas         |   Grid        |    Satellite    | 
-| ------------- | ------------- | ----------------| 
-| !["Atlas Screenshot"](https://cdn.discordapp.com/attachments/691276350962794496/908677027530407966/unknown.png)  | !["Grid Screebshot"](https://cdn.discordapp.com/attachments/691276350962794496/908677312109764608/unknown.png)  |    !["Satellite Screenshot"](https://cdn.discordapp.com/attachments/691276350962794496/908676688043454495/unknown.png)             | 
+I created this single page application specifically to be stored and used on Github to save on hosting costs. This does unfortunately mean that there is some performance issues at times with rendering the basemap. If I were to create a similar application for enterprise use I would serve the basemap as WMS tiles and the data as WFS tiles from a Geoserver instance with Postgres for data storage.
 
-Custom blip
-!["Customblip Screnshot"](https://cdn.discordapp.com/attachments/691276350962794496/908677500069109800/unknown.png)
-## License
 
-GTA V MAP LEAFLET is licensed under MIT License.
+## To Do:
+* Capture additional additional data to add to each point
+* Add collectibles and other similar points
+* Create screenshots for all points (tennis and a few others have missing images that I replaced with generic ones)
+* Potentially create Geoserver instance to serve tiles and WFS to improve loading times
+
+## Authors
+* **Jesse Gardner** - *Creator* - [Github](https://github.com/jgardner117)
+
+
+## Acknowledgements/Copyright information
+GTA V and all associated references, images, etc. &copy; [Rockstar Games](https://www.rockstargames.com/)
+
+Icons &copy; [Icons8](https://icons8.com/)
+
+Screenshots from [GTA V Fandom](https://gta.fandom.com/wiki/Grand_Theft_Auto_V)
