@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1",
+        "imgname":"images/drugdealer/downtownlossantos.jpg",
+        "ptype": "Drug Dealer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2253.52, 235.18]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2",
+        "imgname":"images/drugdealer/cypressflats.png",
+        "ptype": "Drug Dealer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [3492.72, 3688.92]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3",
+        "imgname":"images/drugdealer/cypressflats.png",
+        "ptype": "Drug Dealer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [993.82, -1556.47]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4",
+        "imgname":"images/drugdealer/cypressflats.png",
+        "ptype": "Drug Dealer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1240.48, -3045.53]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5",
+        "imgname":"images/drugdealer/cypressflats.png",
+        "ptype": "Drug Dealer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-89.88, -2365.92]
+      }
+    }
+  ]
+}

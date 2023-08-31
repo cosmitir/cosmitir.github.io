@@ -84,7 +84,7 @@
       [0, 0],
       [8192, 8192]
     ];
-    map.attributionControl.addAttribution('Designed by <a href= "www.jessejamesmedia.com">JJ Media</a> | GTA V &copy; <a href= "www.rockstargames.com">Rockstar Games</a>| Icons &copy<a href= "wwwicons8.com"> Icons8</a>');
+    map.attributionControl.addAttribution('Designed by Cosmitir | GTA V &copy; <a href= "www.rockstargames.com">Rockstar Games</a>| Icons &copy<a href= "wwwicons8.com"> Icons8</a>');
     //Initialize each base layer
     var atlas = L.imageOverlay('images/gtav.png', bounds).addTo(map);
     var satellite = L.imageOverlay('images/GTAV_SATELLITE_8192x8192.png', bounds)
@@ -128,6 +128,24 @@
     $.getJSON("geojson/Ammu-Nation with Range.json", function(data) {
       ammunationwrange.addData(data);
     });
+
+		var drugdealer = L.geoJson(null, {
+			pointToLayer: function(feature, latlng) {
+				//Create icon for marker
+				var icn = L.icon({
+					iconUrl: 'icons/ammunationwrange.png',
+					iconSize: [48, 48],
+				});
+				var marker = L.marker(latlng, {
+					icon: icn
+				});
+				marker.bindPopup("<font color=white><h4>" + feature.properties.name + '</h4>' + "<img src='" + feature.properties.imgname + "' class='popupImage'></font>");
+				return marker;
+			}
+		})
+		$.getJSON("geojson/Drug Dealer.json", function(data) {
+			ammunationwrange.addData(data);
+		});
 
     var barbershop = L.geoJson(null, {
       pointToLayer: function(feature, latlng) {
