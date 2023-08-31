@@ -1,7 +1,7 @@
 [
   {
     "id":1,
-    "type":"Vehicles",
+    "type":"Drugs",
     "title":"Obey Tailgator",
     "notes":"You can find Michaels story car (Audi A6/A8) on the parking lot of the golf course.",
     "order":1,
@@ -16,7 +16,7 @@
   },
   {
     "id":2,
-    "type":"Vehicles",
+    "type":"Drugs",
     "title":"Bulldozer",
     "notes":"Located in the quarry in Tataviam Mountains.",
     "order":2,
