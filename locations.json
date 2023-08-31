@@ -27,18 +27,21 @@
       "yt_user":"Olli43",
       "start":"1:39",
       "end":"2:51"
-    },
-    "credit":[
-      {
-        "what":"Glitch found",
-        "who":"CoreyM1469",
-        "where":"http://www.reddit.com/user/CoreyM1469"
-      },
-      {
-        "what":"Tutorial written",
-        "who":"/u/RustyTank",
-        "where":"http://www.reddit.com/r/gtaglitches/comments/2crrn8/gta_skateboardsurfboard_glitch/"
-      }
-    ]
-  }
+    }
+	},
+	{
+		"id":3,
+		"type":"Drugs",
+		"title":"Drug Dealer",
+		"notes":"A.",
+		"order":1,
+		"lat":99,
+		"lng":99,
+		"video":{
+			"yt_id":"IdYI9VdsqT0",
+			"yt_user":"urparanoid",
+			"start":"2:13",
+			"end":"2:51"
+		}
+	}
 ]
